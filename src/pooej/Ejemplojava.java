@@ -13,7 +13,7 @@ package pooej;
 public class Ejemplojava {
     static boolean esVocal(char letra){
         
-        if(letra == 'A' | | letra == 'E' || letra == 'I' || letra == 'O'  || letra == 'U'|| ){
+        if(letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O'  || letra == 'U' ){
             
             return true;
         }
@@ -37,13 +37,14 @@ public class Ejemplojava {
             }
         }
         for(int i=0; i <letras.length; i++){
-            for(int j = 0; j< letras.length;i++){
+            for(int j = 0; j< letras[i].length;i++){
                 if( esVocal(letras[i][j])){
                     System.out.println("["+letras[i][j]+"]");
                 }
                 
             }
         }
+        
     }
     
 }
